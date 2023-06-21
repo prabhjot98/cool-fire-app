@@ -1,14 +1,9 @@
-import Head from "next/head";
-import Link from "next/link";
-import { Button } from "~/components/Button";
-import { api } from "~/utils/api";
+import { App } from "~/components/Button";
 
 export default function Home() {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
-
   return (
     <>
-      <Button />
+      <App />
     </>
   );
 }
